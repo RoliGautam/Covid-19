@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/Covid-19/static/css/main.9a9f7403.chunk.css",
+    "main.js": "/Covid-19/static/js/main.7c6d1b13.chunk.js",
+    "main.js.map": "/Covid-19/static/js/main.7c6d1b13.chunk.js.map",
+    "runtime-main.js": "/Covid-19/static/js/runtime-main.1cd87746.js",
+    "runtime-main.js.map": "/Covid-19/static/js/runtime-main.1cd87746.js.map",
+    "static/js/2.52f0d919.chunk.js": "/Covid-19/static/js/2.52f0d919.chunk.js",
+    "static/js/2.52f0d919.chunk.js.map": "/Covid-19/static/js/2.52f0d919.chunk.js.map",
+    "index.html": "/Covid-19/index.html",
+    "static/css/main.9a9f7403.chunk.css.map": "/Covid-19/static/css/main.9a9f7403.chunk.css.map",
+    "static/js/2.52f0d919.chunk.js.LICENSE.txt": "/Covid-19/static/js/2.52f0d919.chunk.js.LICENSE.txt",
+    "static/media/clean.274e5cde.gif": "/Covid-19/static/media/clean.274e5cde.gif",
+    "static/media/cov.d5a45e82.png": "/Covid-19/static/media/cov.d5a45e82.png",
+    "static/media/crowd.95ed4a80.jpeg": "/Covid-19/static/media/crowd.95ed4a80.jpeg",
+    "static/media/distance.43ad2c42.gif": "/Covid-19/static/media/distance.43ad2c42.gif",
+    "static/media/doctor.9dcfe733.gif": "/Covid-19/static/media/doctor.9dcfe733.gif",
+    "static/media/four.977d0ed0.jpeg": "/Covid-19/static/media/four.977d0ed0.jpeg",
+    "static/media/home-image.8637197b.gif": "/Covid-19/static/media/home-image.8637197b.gif",
+    "static/media/insta.d69ac3ef.png": "/Covid-19/static/media/insta.d69ac3ef.png",
+    "static/media/mask.a2b39903.gif": "/Covid-19/static/media/mask.a2b39903.gif",
+    "static/media/one.6a2fce9b.jpeg": "/Covid-19/static/media/one.6a2fce9b.jpeg",
+    "static/media/stay-home.438d1dd8.gif": "/Covid-19/static/media/stay-home.438d1dd8.gif",
+    "static/media/three.5cef63b3.jpeg": "/Covid-19/static/media/three.5cef63b3.jpeg",
+    "static/media/touch.454cad36.jpeg": "/Covid-19/static/media/touch.454cad36.jpeg",
+    "static/media/two.db98c3ed.jpeg": "/Covid-19/static/media/two.db98c3ed.jpeg",
+    "static/media/wash.9d6cfe62.gif": "/Covid-19/static/media/wash.9d6cfe62.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1cd87746.js",
+    "static/js/2.52f0d919.chunk.js",
+    "static/css/main.9a9f7403.chunk.css",
+    "static/js/main.7c6d1b13.chunk.js"
+  ]
+}
