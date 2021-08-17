@@ -5,7 +5,6 @@ import Navbar from './Component/Navbar';
 import Home from './Component/Home'
 import About from './Component/About'
 import Footer from './Component/Footer';
-import ChormeExt from './Component/ChormeExt';
 import Covid from './Component/Covid';
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/about" component={About} />
-        <Route exact path="/chrome-ext" component={ChormeExt} />
         <Route exact path="/covid" component={Covid} />
       </Switch>
     </Router>

@@ -32,7 +32,7 @@ function Navbar() {
               <a className="nav-link" href="/about#pandemic">Pandamic</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/chrome-ext">Covid-19 Tracker</a>
+              <a className="nav-link" href="/covid">Covid-19 Tracker</a>
             </li>
           </ul>
 

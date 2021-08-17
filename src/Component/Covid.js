@@ -1,19 +1,17 @@
-import React, { useEffect, useState } from 'react'
-import './Covid.css'
+import { useEffect, useState } from 'react';
+import './Covid.css';
 
 function Covid() {
-    const [data, setData] = useState([]);
-    const getCovidLiveData = async () => {
-        try {
-            // calling api 
-            const responce = await fetch('https://api.covid19india.org/data.json');
-            const realData = await responce.json();
-            // set the data 
-            setData(realData.statewise[0])
-        } catch (err) {
-            console.log(err);
-        }
+
+    const [data, setData] = useState([])
+
+    const getCovidData = async () => {
+        const response = await fetch('https://data.covid19india.org/data.json')
+        const actualData = await response.json();
+        console.log(actualData.statewise);
+        setData(actualData.statewise)
     }
+
 
     // code for the time and date 
     let a;
@@ -27,49 +25,51 @@ function Covid() {
         document.getElementById('time').innerHTML = time + "<br> " + date;
     }, 1000);
 
-    // arrow function for the showing effect of covid live data 
     useEffect(() => {
-        getCovidLiveData();
+        getCovidData();
     }, [])
     return (
-        <>
-            <section id="covid">
-                <h2 id="covid-head">COVID-19 <span className="livesym">🔴</span>LIVE TRACKER</h2>
-                <p className="display-4 date">Time : <span id="time"></span></p>
-                {/* code for the boxes */}
-                <div className="container">
-                    <div className="row">
-                        <div className=" row-ki-au ">
-                            <div className="country"><span className="span">OUR</span>  COUNTRY</div>
-                            <h1>INDIA</h1>
-                        </div>
-                        <div className=" row-ki-au ">
-                            <div className="country"><span className="span">TOTAL</span>  RECOVERED</div>
-                            <div className="cases-covid">{data.recovered}</div>
-                        </div>
-                        <div className=" row-ki-au ">
-                            <div className="country"><span className="span">TOTAL</span>  CONFIRMED</div>
-                            <div className="cases-covid">{data.confirmed}</div>
-                        </div>
-                        <div className=" row-ki-au ">
-                            <div className="country"><span className="span">TOTAL</span>  DEATHS</div>
-                            <div className="cases-covid">{data.deaths}</div>
-                        </div>
-                        <div className=" row-ki-au ">
-                            <div className="country"><span className="span">TOTAL</span>  ACTIVE</div>
-                            <div className="cases-covid">{data.active}</div>
-                        </div>
-                        <div className=" row-ki-au ">
-                            <div className="country"><span className="span">TOTAL</span>  UPDATED</div>
-                            <div className="cases-covid">{data.lastupdatedtime}</div>
-                        </div>
-                    </div>
-                </div>
-                {/* footer section code  */}
-            </section>
+        <section id="Covid">
+            {/* <h2 id="covid-head">COVID-19 <span className="livesym">🔴</span>LIVE TRACKER</h2> */}
+           <br /><br /><br />
+           <div className="mb-5"><h2 className="text-center">COVID-19 <span className="livesym">🔴</span>LIVE TRACKER</h2></div>
+            <p className="display-4 date">Time : <span id="time"></span></p>
+<br />
+            <div className="table-responsive">
+            <table className="table table-hover">
+                <thead>
+                    <tr>
+                        <th>State Name</th>
+                        <th>Confirmed</th>
+                        <th>Recovered</th>
+                        <th>Deaths</th>
+                        <th>Active</th>
+                        <th>Updated Time</th>
+                    </tr>
+                </thead>
 
-        </>
-    )
+
+                <tbody>
+                    {
+                        data.map((curElem, index) => {
+                            return (
+                                <tr key={index}>
+                                    <td> {curElem.state} </td>
+                                    <td> {curElem.confirmed} </td>
+                                    <td> {curElem.recovered} </td>
+                                    <td> {curElem.deaths} </td>
+                                    <td> {curElem.active} </td>
+                                    <td> {curElem.lastupdatedtime} </td>
+                                </tr>
+                            )
+                        })
+                    }
+                </tbody>
+            </table>
+            </div>
+
+        </section>
+    );
 }
 
-export default Covid
+export default Covid;
