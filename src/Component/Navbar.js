@@ -14,25 +14,25 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
+              <a className="nav-link" href="Covid-19/">Home <span className="sr-only">(current)</span></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/about">About</a>
+              <a className="nav-link" href="Covid-19/about">About</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/about#symptoms">Symptoms</a>
+              <a className="nav-link" href="Covid-19/about#symptoms">Symptoms</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/about#protect">Precaustions</a>
+              <a className="nav-link" href="Covid-19/about#protect">Precaustions</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/about#vaccine">Vaccination</a>
+              <a className="nav-link" href="Covid-19/about#vaccine">Vaccination</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/about#pandemic">Pandamic</a>
+              <a className="nav-link" href="Covid-19/about#pandemic">Pandamic</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/covid">Covid-19 Tracker</a>
+              <a className="nav-link" href="Covid-19/covid">Covid-19 Tracker</a>
             </li>
           </ul>
 
