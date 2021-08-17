@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body {
+    background-color: rgb(53 39 47);
+    overflow-x: hidden;
+}
+
+/* section- style for the header... */
+section {
+    text-align: center;
+    width: 100vw;
+    height: 100%;
+    font-weight: 700;
+}
+
+/* style for the live logo.. */
+.livesym {
+    text-shadow: 3px 3px 7px black;
+}
+
+/* style for the heading of covid live tracker */
+section h2 {
+    padding: 5px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    text-shadow: 5px 5px 20px;
+}
+
+#covid-head {
+    margin-top: 100px;
+}
+
+/* date styling */
+.date {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* style of the boxes */
+.row-ki-au {
+    background-image: linear-gradient(#ec008c, #fc6767);
+    width: 310px;
+    height: 220px;
+    margin-bottom: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    box-shadow: 10px 16px 9px rgb(15, 15, 15);
+}
+
+/* style of boxes on hover.. */
+.row-ki-au:hover {
+    background-image: linear-gradient( #aa076b, #61045f);
+}
+
+/* code of the row.. */
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* style of the name of the country India in boxes */
+.country {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.cases-covid {
+    font-size: 2.5rem;
+    color: #260ea7;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+/* style of small heading under boxes like 'total' */
+.span {
+    font-size: 1rem;
+    color: black;
+    font-family: system-ui;
+    font-weight: 900;
+}
+
+/* style of the container's main heading like "updated", "deaths", "confired" etc */
+.row-ki-au h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 900;
+    text-shadow: 3px 4px 9px black;
+}
+
+/* footer social media list - style.. */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline;
+}
+
+.row-ki-au:hover {
+    animation: pop-in 2s alternate infinite;
+}
+
+@keyframes pop-in {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}

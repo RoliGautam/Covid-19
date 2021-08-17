@@ -1,0 +1,33 @@
+#chrome {
+    background-image: repeating-linear-gradient( 150deg, rgb(63, 54, 54), transparent 100px);
+    text-align: center;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.extension-div {
+    color: white;
+    font-size: 1.8rem;
+    font-family: cursive;
+    margin: auto;
+}
+
+#this-ext {
+    text-decoration: none;
+    color: #89f7ce;
+    font-weight: bolder;
+    background-color: black;
+    padding: 2px 30px;
+    border-radius: 10px;
+}
+
+#chrome-h3 {
+    text-shadow: 6px 6px 15px;
+    font-weight: bold;
+    color: #fad7f4;
+    font-size: 3rem;
+}
+
+#image-cors {
+    height: 300px;
+}
