@@ -46,7 +46,7 @@ Symptoms|  Precaustions
 4. REACT
 5. BOOTSTRAP
 
-Project Link : https://covid-19-sources.herokuapp.com/
+Project Link : https://corona-phi-inky.vercel.app/
  
 
 
